@@ -6,15 +6,15 @@
 5. Otros.
 */
 :root {
-  --bitcoin-orange: #F7931A;
-  --soft-orange: #FFE9D5;
-  --secundary-blue: #1A9AF7;
-  --soft-blue: #E7F5FF;
-  --warm-black: #201E1C;
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secundary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
   --black: #282623;
-  --grey: #BABABA;
-  --off-white: #FAF8F7;
-  --white: #FFF;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --white: #fff;
 }
 
 * {
@@ -24,7 +24,7 @@
 }
 html {
   font-size: 62.5%;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   /* font-family: 'Inter', sans-serif; */
 }
 header {
@@ -36,7 +36,7 @@ header {
   min-width: 320px;
   height: 334px;
   text-align: center;
-  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
 }
 header img {
   width: 150px;
@@ -89,7 +89,7 @@ header img {
   width: 20px;
   height: 16px;
   margin-left: 10px;
-  background-image: url('./assets/icons/down-arrow.svg');
+  background-image: url("./assets/icons/down-arrow.svg");
 }
 
 /* Main and exchange section */
@@ -111,7 +111,7 @@ main {
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url('./assets/images/bitcoin.svg');
+  background-image: url("./assets/images/bitcoin.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,4 +135,64 @@ main {
   font-weight: 500;
   line-height: 1.6rem;
   color: #757575;
+}
+.main-tables-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.main-tables-container > div {
+  margin-bottom: 10px;
+}
+.main-tables-container h3 {
+  width: 75%;
+  font-size:1.8rem;
+  margin-bottom: 8px;
+  color: #ff9536;
+}
+.main-tables-container .main-tables-container--table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 300px));
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: var(--white);
+  padding: 0 10pxpx;
+}
+.main-tables-container .main-tables-container--table p:nth-child(2n + 1) {
+  font-size: 1.4rem;
+  color: #b5b0ac;
+  padding: 5px 5px 5px 10px;
+  text-align: start;
+}
+.main-tables-container .main-tables-container--table p:nth-child(2n) {
+  font-size: 1.4rem;
+  color: #757575;
+  padding: 5px 5px 5px 10px;
+  text-align: start;
+}
+.main-tables-container .main-tables-container--table p:nth-child(3n),
+p:nth-child(4n),
+p:nth-child(5n),
+p:nth-child(7n) {
+  border-top: 1px solid var(--off-white);
+}
+.main-tables-container .main-tables-container--table p:nth-child(2n+1) {
+  border-right: 1px solid var(--off-white);
+}
+.main-tables-container--table p > span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url("./assets/icons/trending-down.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-tables-container--table p:nth-child(4) > span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url("./assets/icons/trending-up.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
