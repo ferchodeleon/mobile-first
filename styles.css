@@ -335,3 +335,42 @@ p:nth-child(7n) {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+.plants-container--card .recommended {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  top: -15px;
+  left: calc(50% - 48px);
+  width: 95px;
+  height: auto;
+  padding: 8px 5px;
+  color: var(--white);
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+}
+.plan-info-container {
+  padding-top: 40px;
+}
+.plan-info-container .plan-card--title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+.plan-info-container .plan-card--price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 6.3rem;
+}
+.plan-info-container .plan-card--price span {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: 25px;
+}
+.plant-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
