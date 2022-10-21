@@ -236,6 +236,7 @@ p:nth-child(7n) {
   line-height: 1.8rem;
 }
 .product-detail--card {
+  margin: 14px 5px;
   background-color: var(--black);
   padding: 20px;
   border-radius: 5px;
@@ -246,9 +247,35 @@ p:nth-child(7n) {
   height: 23px;
   background-image: url('./assets/icons/clock.svg');
 }
+.product-detail--card .eye {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url('./assets/icons/eye.svg');
+}
+.product-detail--card .dollar {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url('./assets/icons/dollar-sign.svg');
+}
+.product-detail--card .check {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url('./assets/icons/check-circle.svg');
+}
 .product-detail--card .product--card-title {
+  margin-top: 14px;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.8rem;
   color: var(--white);
+}
+.product-detail--card .product--card-body {
+  margin-top: 14px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
 }
