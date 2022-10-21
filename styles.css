@@ -283,7 +283,7 @@ p:nth-child(7n) {
   display: inline-block;
   width: 100%;
   height: 50vh;
-  background-image: url('./assets/images/bitcoinbaby.svg');
+  background-image: url('./assets/images/bitcoinbaby1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -295,4 +295,31 @@ p:nth-child(7n) {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.6rem;
+}
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.plants--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.plants--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.plants--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
 }
