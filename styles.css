@@ -323,8 +323,17 @@ p:nth-child(7n) {
   line-height: 1.8rem;
   color: #757575;
 }
+.plants-container--slider {
+  display: flex;
+  gap: 10px;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .plants-container--card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
