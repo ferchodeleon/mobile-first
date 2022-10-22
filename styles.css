@@ -374,3 +374,17 @@ p:nth-child(7n) {
   font-size: 1.2rem;
   color: #757575;
 }
+.plant-card--ca {
+ margin-top: 25px;
+ padding: 10px;
+ background-color: var(--off-white);
+ border: 2px solid var(--bitcoin-orange);
+ border-radius: 5px;
+}
+.plant-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  background-image: url('./assets/icons/arrow-right.svg');
+}
