@@ -137,9 +137,13 @@ main {
   color: #757575;
 }
 .main-tables-container {
-  width: 100%;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
   height: auto;
-  margin: 0 auto;
+  margin: 0 30px;
 }
 .main-tables-container > div {
   margin-bottom: 10px;
@@ -396,4 +400,25 @@ p:nth-child(7n) {
   height: 20px;
   vertical-align: bottom;
   background-image: url('./assets/icons/arrow-right.svg');
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+  justify-content: space-around;
+  align-items: center;
+}
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+footer .left ul li {
+  margin: 10px 0;
+}
+footer .left ul li a {
+  text-decoration: none;
+  color: var(--white);
 }
